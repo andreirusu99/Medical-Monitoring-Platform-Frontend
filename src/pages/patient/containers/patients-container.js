@@ -1,5 +1,5 @@
 import React from 'react';
-import APIResponseErrorMessage from "../../../commons/error_handling/api-response-error-message";
+import APIResponseErrorMessage from "../../../common/error_handling/api-response-error-message";
 import {Button, Card, CardHeader, Col, FormGroup, Input, Label, Modal, ModalBody, ModalHeader, Row} from 'reactstrap';
 import AddPatientForm from "../components/add-patient-form";
 import {Link} from 'react-router-dom';
@@ -8,7 +8,7 @@ import * as API_PATIENTS from "../api/patient-api"
 import PatientsTable from "../components/patients-table";
 import NavigationBar from "../../../navigation-bar";
 import Cookies from "universal-cookie";
-import {REMOTE_HOST} from "../../../commons/hosts";
+import {REMOTE_HOST} from "../../../common/hosts";
 
 const cookies = new Cookies();
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import * as API_DOCTORS from "../doctor/api/doctor-api";
 import {Badge, Button, Card, CardHeader, Col, Row} from "reactstrap";
-import APIResponseErrorMessage from "../../commons/error_handling/api-response-error-message";
+import APIResponseErrorMessage from "../../common/error_handling/api-response-error-message";
 import NavigationBar from "../../navigation-bar";
 import UpdateDoctorForm from "../doctor/components/update-doctor-form";
 
 import Cookies from "universal-cookie";
 import {Link} from "react-router-dom";
-import {REMOTE_HOST} from "../../commons/hosts";
+import {REMOTE_HOST} from "../../common/hosts";
 
 const cookies = new Cookies();
 

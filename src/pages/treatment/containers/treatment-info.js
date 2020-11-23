@@ -1,12 +1,12 @@
 import React from 'react';
 import * as API_TREATMENTS from "../api/treatment-api";
 import {Button, Card, CardHeader, Col, Row} from "reactstrap";
-import APIResponseErrorMessage from "../../../commons/error_handling/api-response-error-message";
+import APIResponseErrorMessage from "../../../common/error_handling/api-response-error-message";
 import UpdateTreatmentForm from "../components/update-treatment-form";
 import {Link} from 'react-router-dom';
 import Cookies from "universal-cookie";
 import NavigationBar from "../../../navigation-bar";
-import {REMOTE_HOST} from "../../../commons/hosts";
+import {REMOTE_HOST} from "../../../common/hosts";
 
 const cookies = new Cookies();
 

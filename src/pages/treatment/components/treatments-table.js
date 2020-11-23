@@ -1,5 +1,5 @@
 import React from "react";
-import Table from "../../../commons/tables/table";
+import Table from "../../../common/tables/table";
 
 
 const columns = [

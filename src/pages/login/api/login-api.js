@@ -1,5 +1,5 @@
-import {REMOTE_HOST} from "../../../commons/hosts";
-import RestApiClient from "../../../commons/api/rest-client";
+import {REMOTE_HOST} from "../../../common/hosts";
+import RestApiClient from "../../../common/api/rest-client";
 
 
 const endpoint = {

@@ -1,12 +1,12 @@
 import React from 'react';
 import * as API_PATIENTS from "../api/patient-api";
 import {Button, Card, CardHeader, Col, Row} from "reactstrap";
-import APIResponseErrorMessage from "../../../commons/error_handling/api-response-error-message";
+import APIResponseErrorMessage from "../../../common/error_handling/api-response-error-message";
 import UpdatePatientForm from "../components/update-patient-form";
 import {Link} from 'react-router-dom';
 import NavigationBar from "../../../navigation-bar";
 import Cookies from "universal-cookie";
-import {REMOTE_HOST} from "../../../commons/hosts";
+import {REMOTE_HOST} from "../../../common/hosts";
 
 const cookies = new Cookies();
 

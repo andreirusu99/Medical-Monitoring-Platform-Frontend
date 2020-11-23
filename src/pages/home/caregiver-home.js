@@ -2,13 +2,13 @@ import React from 'react';
 import * as API_PATIENTS from "../patient/api/patient-api";
 import * as API_CAREGIVERS from "../caregiver/api/caregiver-api"
 import {Alert, Badge, Button, Card, CardHeader, Col, FormGroup, Input, Row} from "reactstrap";
-import APIResponseErrorMessage from "../../commons/error_handling/api-response-error-message";
+import APIResponseErrorMessage from "../../common/error_handling/api-response-error-message";
 import {Link} from "react-router-dom";
 import PatientsTable from "../patient/components/patients-table";
 import Cookies from "universal-cookie";
 import SockJS from 'sockjs-client';
 import Stomp from 'stompjs';
-import {REMOTE_HOST} from "../../commons/hosts";
+import {REMOTE_HOST} from "../../common/hosts";
 
 const cookies = new Cookies();
 

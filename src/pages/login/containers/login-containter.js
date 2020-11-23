@@ -1,10 +1,10 @@
 import React from 'react';
 import {Alert, Button, Card, CardHeader, Col, FormGroup, Input, Label, Row} from "reactstrap";
-import validate from "../../../commons/validators/form-validators";
+import validate from "../../../common/validators/form-validators";
 import * as API_LOGIN from "../api/login-api"
 import {Link, Redirect} from "react-router-dom";
 import Cookies from "universal-cookie";
-import {REMOTE_HOST} from "../../../commons/hosts";
+import {REMOTE_HOST} from "../../../common/hosts";
 
 
 const cookies = new Cookies();

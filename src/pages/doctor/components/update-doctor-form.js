@@ -1,6 +1,6 @@
 import React from 'react';
-import validate from "../../../commons/validators/form-validators";
-import APIResponseErrorMessage from "../../../commons/error_handling/api-response-error-message";
+import validate from "../../../common/validators/form-validators";
+import APIResponseErrorMessage from "../../../common/error_handling/api-response-error-message";
 import {Button, Col, FormGroup, Input, Label, Row} from "reactstrap";
 import * as API_DOCTORS from "../../doctor/api/doctor-api";
 

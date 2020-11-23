@@ -1,8 +1,8 @@
 import React from 'react';
-import validate from "../../../commons/validators/form-validators";
+import validate from "../../../common/validators/form-validators";
 import Button from "react-bootstrap/Button";
 import * as API_DRUGS from "../api/drug-api";
-import APIResponseErrorMessage from "../../../commons/error_handling/api-response-error-message";
+import APIResponseErrorMessage from "../../../common/error_handling/api-response-error-message";
 import {Col, FormGroup, Input, Label, Row} from "reactstrap";
 
 

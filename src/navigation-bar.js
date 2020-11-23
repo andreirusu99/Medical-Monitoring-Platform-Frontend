@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './commons/images/icon.png';
+import logo from './common/images/icon.png';
 
 import {
     DropdownItem,
