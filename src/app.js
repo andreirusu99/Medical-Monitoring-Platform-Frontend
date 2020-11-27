@@ -5,7 +5,6 @@ import PatientsContainer from './pages/patient/containers/patients-container'
 import PatientInfo from './pages/patient/containers/patient-info'
 
 import ErrorPage from './common/error_handling/error-page';
-import styles from './common/styles/project-style.css';
 import DrugsContainer from "./pages/drug/containers/drugs-container";
 import DrugInfo from "./pages/drug/containers/drug-info";
 import CaregiverContainer from "./pages/caregiver/containers/caregivers-container";
@@ -24,7 +23,7 @@ class App extends React.Component {
     render() {
 
         return (
-            <div className={styles.back}>
+            <div>
                 <Router>
                     <div>
 

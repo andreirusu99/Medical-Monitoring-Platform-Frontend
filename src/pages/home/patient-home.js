@@ -151,7 +151,7 @@ class PatientHome extends React.Component {
                             <Link to={"/treatments/" + this.state.selectedTreatmentId}>
                                 <Button color="info"
                                         disabled={this.state.selectedTreatmentId === null}>
-                                    View intake intervals
+                                    View medication
                                 </Button>
                             </Link>
 
@@ -170,7 +170,7 @@ class PatientHome extends React.Component {
                             </FormGroup>
 
                             <Link to={"/pillbox/" + this.state.patient.id}>
-                                <Button color="warning">
+                                <Button color="success" size={"lg"} style={{marginTop: '20px'}}>
                                     {"Pill Box Application"}
                                 </Button>
                             </Link>
