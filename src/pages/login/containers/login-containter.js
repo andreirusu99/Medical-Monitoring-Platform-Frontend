@@ -52,10 +52,6 @@ class LoginContainer extends React.Component {
         };
     }
 
-    componentDidMount() {
-
-    }
-
     handleChange = event => {
 
         const name = event.target.name;

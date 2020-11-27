@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+package com.andrei.ds;
+
+message MedicationPlanRequest {
+  string patientId = 1;
+}
+
+message MedicationPlanResponse {
+  string patientId = 1;
+  repeated MedicationItem items = 2;
+}
+
+message MedicationItem {
+  string drugName = 1;
+  uint32 dosage = 2;
+}
+
+message MedicationTakenRequest {
+  string patientId = 1;
+  string drugName = 2;
+}
+
+message MedicationTakenResponse {
+  string patientId = 1;
+  string drugName = 2;
+  bool acknowledged = 3;
+}
+
+message MedicationNotTakenRequest {
+  string patientId = 1;
+  string drugName = 2;
+}
+
+message MedicationNotTakenResponse {
+  string patientId = 1;
+  string drugName = 2;
+  bool acknowledged = 3;
+}
+
+service PillBoxService {
+  rpc registerMedsTaken(MedicationTakenRequest) returns (MedicationTakenResponse);
+  rpc registerMedsNotTaken(MedicationNotTakenRequest) returns (MedicationNotTakenResponse);
+  rpc downloadMedicationPlan(MedicationPlanRequest) returns (MedicationPlanResponse);
+}

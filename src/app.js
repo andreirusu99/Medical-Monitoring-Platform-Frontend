@@ -16,6 +16,7 @@ import AssigneesContainer from "./pages/assignment/containers/assignees-containe
 import LoginContainer from "./pages/login/containers/login-containter";
 import CaregiverHome from "./pages/home/caregiver-home";
 import PatientHome from "./pages/home/patient-home";
+import PillboxContainer from "./pages/patient/containers/pillbox-container";
 
 class App extends React.Component {
 
@@ -42,6 +43,8 @@ class App extends React.Component {
                             <Route exact path='/patients' render={() => <PatientsContainer/>}/>
 
                             <Route exact path='/patients/:patientId' component={PatientInfo}/>
+
+                            <Route exact path='/pillbox/:patientId' component={PillboxContainer}/>
 
                             <Route exact path='/drugs' render={() => <DrugsContainer/>}/>
 

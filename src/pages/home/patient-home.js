@@ -154,6 +154,7 @@ class PatientHome extends React.Component {
                                     View intake intervals
                                 </Button>
                             </Link>
+
                             <FormGroup id="patientName">
                                 <Input style={{marginTop: "10px"}} type="select" name="patientName"
                                        id="patientNameField"
@@ -166,8 +167,13 @@ class PatientHome extends React.Component {
                                         </option>
                                     )}
                                 </Input>
-
                             </FormGroup>
+
+                            <Link to={"/pillbox/" + this.state.patient.id}>
+                                <Button color="warning">
+                                    {"Pill Box Application"}
+                                </Button>
+                            </Link>
                         </Col>
                     </Row>
                     <Row>
