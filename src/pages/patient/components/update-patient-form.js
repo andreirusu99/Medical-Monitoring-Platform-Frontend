@@ -4,6 +4,7 @@ import APIResponseErrorMessage from "../../../common/error_handling/api-response
 import {Button, Col, FormGroup, Input, Label, Row} from "reactstrap";
 import * as API_PATIENTS from "../api/patient-api";
 import Cookies from "universal-cookie";
+import {REMOTE_HOST} from "../../../common/hosts";
 
 const cookies = new Cookies();
 
@@ -26,7 +27,7 @@ class UpdatePatientForm extends React.Component {
 
             formIsValid: true,
 
-            userType: cookies.get('cachedUserType'),
+            userType: cookies.get(REMOTE_HOST.user_type_cookie),
 
             formControls: {
                 name: {
