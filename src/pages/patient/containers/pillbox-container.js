@@ -37,7 +37,7 @@ class PillboxContainer extends React.Component {
 
             let now = new Date()
 
-            if (now.getHours() === 20 && now.getMinutes() === 30 && now.getSeconds() === 15) {
+            if (now.getHours() === 18 && now.getMinutes() === 10 && now.getSeconds() === 45) {
                 if (state.deadlines) state.deadlines = []
                 state.medication = []
                 localStorage.removeItem("Medication")
@@ -151,7 +151,7 @@ class PillboxContainer extends React.Component {
                     this.setState(state)
 
                     // update storage
-                    // localStorage.setItem("Medication", JSON.stringify(this.state.medication))
+                    localStorage.setItem("Medication", JSON.stringify(this.state.medication))
                 }
             }
         })
